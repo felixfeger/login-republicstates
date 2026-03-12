@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script type="module">
+    import { finishAuthentication } from "https://unpkg.com/@authgear/web@latest/dist/authgear.min.js";
+
+    const authgear = new Authgear("2c61942654cd9015");
+
+    // Complete login
+    await authgear.finishAuthentication();
+
+    // Then send to Google Site
+    window.location.href = "https://www.republicstates.xyz/mange-your-account";
+  </script>
+</head>
+<body>
+  Logging in...
+</body>
+</html>
