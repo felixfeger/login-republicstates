@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f0f2f5;
+    }
+    h1 {
+      margin-bottom: 40px;
+    }
+    button {
+      display: block;
+      width: 250px;
+      padding: 15px;
+      margin: 10px auto;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Portal Page</h1>
+
+<button onclick="redirectTo('https://republicstates.xyz/manage-your-account')">
+  Hidden Google Page 1
+</button>
+
+<button onclick="redirectTo('https://sites.google.com/view/YOUR-SECOND-PAGE')">
+  Hidden Google Page 2
+</button>
+
+<button onclick="redirectTo('https://your-other-link.com')">
+  Other Page
+</button>
+
+<script>
+  function redirectTo(url) {
+    window.location.href = url;
+  }
+</script>
+
+</body>
+</html>
