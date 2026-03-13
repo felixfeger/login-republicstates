@@ -1,181 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Republic States Online Portal</title>
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-background:#eef2f7;
-color:#333;
-}
-
-header{
-background:#0b3d91;
-color:white;
-padding:18px 30px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 6px rgba(0,0,0,0.15);
-}
-
-header h1{
-font-size:20px;
-letter-spacing:0.5px;
-}
-
-.container{
-max-width:1000px;
-margin:60px auto;
-padding:20px;
-}
-
-.welcome{
+font-family:Arial;
+background:#f4f6f9;
 text-align:center;
-margin-bottom:40px;
+padding:50px;
 }
-
-.welcome h2{
-font-size:28px;
-margin-bottom:10px;
-}
-
-.welcome p{
-color:#666;
-}
-
-.portal-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-border-radius:10px;
-padding:28px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-transition:transform .15s ease, box-shadow .15s ease;
-}
-
-.card:hover{
-transform:translateY(-4px);
-box-shadow:0 8px 20px rgba(0,0,0,0.12);
-}
-
-.card h3{
-margin-bottom:12px;
-font-size:18px;
-}
-
-.card p{
-font-size:14px;
-color:#666;
-margin-bottom:20px;
-}
-
 button{
+padding:15px 25px;
+margin:10px;
+font-size:16px;
 background:#0b3d91;
 color:white;
 border:none;
-padding:10px 18px;
 border-radius:6px;
 cursor:pointer;
-font-size:14px;
 }
-
 button:hover{
 background:#082c6b;
 }
-
-button.disabled{
-background:#9aa5b1;
-cursor:not-allowed;
-}
-
-footer{
-text-align:center;
-margin-top:60px;
-font-size:13px;
-color:#777;
-}
-
 </style>
-
-<script type="module">
-import { Authgear } from "https://unpkg.com/@authgear/web@latest/dist/authgear.min.js";
-
-/* Replace with your Authgear App ID */
-const authgear = new Authgear("2c61942654cd9015");
-
-async function completeLogin(){
-try{
-await authgear.finishAuthentication();
-console.log("Authentication complete");
-}catch(e){
-console.log("Session already active or not required");
-}
-}
-
-completeLogin();
-</script>
-
 </head>
 
 <body>
 
-<header>
 <h1>Republic States Online Portal</h1>
-</header>
 
-<div class="container">
+<a href="https://www.republicstates.xyz/mange-your-account">
+<button>Manage Your Account</button>
+</a>
 
-<div class="welcome">
-<h2>Welcome to the Online Services Portal</h2>
-<p>Select a service below to continue.</p>
-</div>
+<a href="https://sites.google.com/view/getdomainnow/domain">
+<button>Manage / Get a New Domain</button>
+</a>
 
-<div class="portal-grid">
-
-<div class="card">
-<h3>Manage Your Account</h3>
-<p>View or update your account information and settings.</p>
-<button onclick="window.location.href='https://www.republicstates.xyz/mange-your-account'">
-Open
-</button>
-</div>
-
-<div class="card">
-<h3>Domain Services</h3>
-<p>Register a new domain or manage an existing one.</p>
-<button onclick="window.location.href='https://sites.google.com/view/getdomainnow/domain'">
-Manage / Get Domain
-</button>
-</div>
-
-<div class="card">
-<h3>Additional Services</h3>
-<p>More online services will be available in the future.</p>
-<button class="disabled">Coming Soon</button>
-</div>
-
-</div>
-
-<footer>
-<p>Republic States Online Services • Secure Access Portal</p>
-</footer>
-
-</div>
+<button disabled>Coming Soon</button>
 
 </body>
 </html>
